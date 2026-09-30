@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kitchen AI telemetry event",
+  "description": "Contrato apenas: nenhum evento/métrica é armazenado até haver endpoint e política de consentimento configurados.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["event_id", "event_type", "occurred_at"],
+  "properties": {
+    "event_id": {"type": "string", "minLength": 1},
+    "event_type": {"enum": ["impression", "view", "watch_time", "engagement", "click", "qualified_visit", "kitchen_entry", "signup", "subscription", "return_visit", "share", "search", "entity_interaction"]},
+    "occurred_at": {"type": "string", "format": "date-time"},
+    "video_id": {"type": ["string", "null"]},
+    "entity": {"type": ["string", "null"]},
+    "cluster": {"type": ["string", "null"]},
+    "pillar": {"type": ["string", "null"]},
+    "language": {"type": ["string", "null"]},
+    "country": {"type": ["string", "null"]},
+    "channel": {"type": ["string", "null"]},
+    "format": {"type": ["string", "null"]},
+    "hook": {"type": ["string", "null"]},
+    "season": {"type": ["string", "null"]},
+    "value_seconds": {"type": ["number", "null"], "minimum": 0}
+  }
+}

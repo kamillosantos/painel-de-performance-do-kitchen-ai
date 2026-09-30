@@ -1,0 +1,11 @@
+{
+  "name": "kitchen-ai-global-video-library",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "build:check": "node scripts/build.mjs --check",
+    "build:write": "node scripts/build.mjs --write"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kitchen AI generation batch",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["batch_id", "created_at", "items_planned", "items_generated", "items_completed", "items_failed", "items_published", "items_waiting", "status"],
+  "properties": {
+    "batch_id": {"type": "string", "minLength": 1},
+    "created_at": {"type": "string", "format": "date-time"},
+    "pillar": {"type": ["string", "null"]},
+    "cluster": {"type": ["string", "null"]},
+    "items_planned": {"type": "integer", "minimum": 0},
+    "items_generated": {"type": "integer", "minimum": 0},
+    "items_completed": {"type": "integer", "minimum": 0},
+    "items_failed": {"type": "integer", "minimum": 0},
+    "items_published": {"type": "integer", "minimum": 0},
+    "items_waiting": {"type": "integer", "minimum": 0},
+    "status": {"enum": ["PLANNED", "QUEUED", "GENERATING", "COMPLETED", "FAILED", "WAITING_CAPACITY", "PARTIAL"]}
+  }
+}

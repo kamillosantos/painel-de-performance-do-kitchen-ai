@@ -1,134 +1,137 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kitchen AI Global | Engine de Descoberta Gastronômica</title>
-  <meta name="description" content="Descubra tendências, ecossistemas gastronômicos e inteligência preditiva para restaurantes e criadores.">
-  <link rel="canonical" href="https://kitchenai.global/">
-  
-  <meta property="og:title" content="Kitchen AI - Global Discovery Engine">
-  <meta property="og:description" content="Automated Discovery & Predictive Analytics for Gastronomy.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101511">
+  <title>Kitchen AI Global — Biblioteca gastronômica</title>
+  <meta name="description" content="Uma biblioteca gastronômica global em construção: vídeos verificados, descoberta editorial e métricas conectadas somente quando houver fonte real.">
+  <link rel="canonical" href="https://kamillosantos.github.io/painel-de-performance-do-kitchen-ai/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
   <meta property="og:type" content="website">
-
-  <style>
-    :root {
-      --bg-color: #0d1117;
-      --card-bg: #161b22;
-      --accent: #238636;
-      --text-main: #f0f6fc;
-      --text-muted: #8b949e;
-      --font-stack: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body {
-      background-color: var(--bg-color);
-      color: var(--text-main);
-      font-family: var(--font-stack);
-      line-height: 1.6;
-      padding: 2rem;
-    }
-
-    header {
-      max-width: 1200px;
-      margin: 0 auto 3rem auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #30363d;
-      padding-bottom: 1rem;
-    }
-
-    .logo { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
-    .tag { color: var(--accent); font-size: 0.85rem; font-weight: 600; }
-
-    main { max-width: 1200px; margin: 0 auto; }
-
-    .hero {
-      text-align: center;
-      padding: 4rem 1rem;
-    }
-
-    .hero h1 { font-size: 3rem; margin-bottom: 1rem; line-height: 1.2; }
-    .hero p { color: var(--text-muted); font-size: 1.25rem; max-width: 680px; margin: 0 auto 2rem auto; }
-
-    .cta-btn {
-      background-color: var(--accent);
-      color: #fff;
-      padding: 0.8rem 2rem;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 600;
-      display: inline-block;
-      transition: opacity 0.2s ease;
-    }
-
-    .cta-btn:hover { opacity: 0.9; }
-
-    .features-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .card {
-      background: var(--card-bg);
-      border: 1px solid #30363d;
-      border-radius: 8px;
-      padding: 1.5rem;
-    }
-
-    .card h3 { margin-bottom: 0.5rem; color: #fff; }
-    .card p { color: var(--text-muted); font-size: 0.95rem; }
-
-    footer {
-      max-width: 1200px;
-      margin: 4rem auto 0 auto;
-      padding-top: 2rem;
-      border-top: 1px solid #30363d;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.85rem;
-    }
-  </style>
+  <meta property="og:site_name" content="Kitchen AI Global">
+  <meta property="og:title" content="Kitchen AI Global — Biblioteca gastronômica">
+  <meta property="og:description" content="Descoberta gastronômica com catálogo, direitos e métricas verificáveis.">
+  <meta property="og:url" content="https://kamillosantos.github.io/painel-de-performance-do-kitchen-ai/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kitchen AI Global — Biblioteca gastronômica">
+  <meta name="twitter:description" content="Descoberta gastronômica com catálogo, direitos e métricas verificáveis.">
+  <link rel="stylesheet" href="./assets/app.css">
+  <script type="module" src="./assets/app.js"></script>
 </head>
 <body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Navegação principal">
+      <a class="brand" href="./" aria-label="Kitchen AI Global início">
+        <span class="brand-mark" aria-hidden="true">K</span>
+        <span><strong>KITCHEN AI</strong><small>GLOBAL LIBRARY</small></span>
+      </a>
+      <div class="nav-caption">WORKSPACE</div>
+      <nav class="nav-list">
+        <a class="nav-link is-active" href="#overview"><span aria-hidden="true">◈</span> Visão geral</a>
+        <a class="nav-link" href="#library"><span aria-hidden="true">▤</span> Biblioteca</a>
+        <a class="nav-link" href="#pipeline"><span aria-hidden="true">⇢</span> Pipeline</a>
+        <a class="nav-link" href="#measurement"><span aria-hidden="true">⌁</span> Telemetria</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="connection-indicator"><i></i><span>Fonte não conectada</span></div>
+        <p>Ambiente estático<br>Sem dados de produção</p>
+      </div>
+    </aside>
 
-  <header>
-    <div class="logo">KITCHEN_AI <span class="tag">GLOBAL</span></div>
-    <nav>
-      <a href="#app" class="cta-btn">Open App</a>
-    </nav>
-  </header>
+    <main id="overview" class="main-content">
+      <header class="topbar">
+        <div class="breadcrumbs"><span>Kitchen AI</span><b>/</b><span>Global Library</span></div>
+        <div class="topbar-right"><span class="status-pill"><i></i> CATALOGO OFFLINE</span><span class="avatar" aria-label="Kitchen AI">K</span></div>
+      </header>
 
-  <main>
-    <section class="hero">
-      <h1>Automated Discovery Engine</h1>
-      <p>Descubra tendências globais, ecossistemas de fornecedores e dados preditivos em tempo real.</p>
-      <a href="#download" class="cta-btn">Get Started &rarr;</a>
-    </section>
+      <section class="page-heading">
+        <div>
+          <div class="eyebrow"><span class="eyebrow-line"></span> CONTENT OPERATIONS</div>
+          <h1>Descoberta<br><em>gastronômica global.</em></h1>
+          <p class="lead">Biblioteca editorial e central operacional do Kitchen AI. Só conteúdo e resultados conectados a uma fonte real aparecem como publicados.</p>
+        </div>
+        <div class="capacity-note">
+          <span class="capacity-icon" aria-hidden="true">↗</span>
+          <div><small>ALVO PLANEJADO</small><strong>até 1.000 unidades/dia</strong><p>Capacidade futura planejada — não é produção realizada nem capacidade disponível.</p></div>
+        </div>
+      </section>
 
-    <section class="features-grid">
-      <article class="card">
-        <h3>Trend Engine</h3>
-        <p>Análise em tempo real de clusters de vídeo e dados de mercado para antecipar demandas.</p>
-      </article>
-      <article class="card">
-        <h3>Entity Graph</h3>
-        <p>Mapeamento de restaurantes, fornecedores e ecossistemas para máxima eficiência.</p>
-      </article>
-      <article class="card">
-        <h3>Global Network</h3>
-        <p>Expansão internacional contínua através de inteligência adaptativa de conteúdo.</p>
-      </article>
-    </section>
-  </main>
+      <section class="notice" aria-labelledby="source-status-title">
+        <div class="notice-icon" aria-hidden="true">!</div>
+        <div class="notice-copy"><strong id="source-status-title">Catálogo Skillgroove-voiceOS não conectado</strong><p>O repositório auditado não contém os 89 registros nem credenciais/API de catálogo. Nenhum vídeo foi importado, contado como publicado ou alterado. O conteúdo existente fora deste repositório permanece intocado.</p></div>
+        <span class="notice-tag">AÇÃO NECESSÁRIA</span>
+      </section>
 
-  <footer>
-    <p>&copy; 2026 Kitchen AI Global. #KamilloSantosProtocol</p>
-  </footer>
+      <section class="metric-grid" aria-label="Estado real dos dados locais">
+        <article class="metric-card metric-primary"><div class="metric-label">VÍDEOS NO MANIFESTO LOCAL <span>↗</span></div><div class="metric-value" id="video-count">—</div><div class="metric-foot"><i class="dot dot-muted"></i><span>Fonte externa não conectada</span></div></article>
+        <article class="metric-card"><div class="metric-label">PÁGINAS ELEGÍVEIS <span>↗</span></div><div class="metric-value" id="page-count">—</div><div class="metric-foot"><i class="dot dot-muted"></i><span>Geradas no build local</span></div></article>
+        <article class="metric-card"><div class="metric-label">DIREITOS VERIFICADOS <span>↗</span></div><div class="metric-value" id="rights-count">—</div><div class="metric-foot"><i class="dot dot-muted"></i><span>Sem inferências de licença</span></div></article>
+        <article class="metric-card"><div class="metric-label">FILA DE GERAÇÃO <span>↗</span></div><div class="metric-value metric-na">N/D</div><div class="metric-foot"><i class="dot dot-muted"></i><span>Worker e fila não configurados</span></div></article>
+      </section>
 
+      <section class="content-grid">
+        <div class="panel library-panel" id="library">
+          <div class="panel-heading">
+            <div><div class="eyebrow">PUBLIC DISCOVERY</div><h2>Biblioteca global</h2><p>Conteúdo elegível, com origem, atribuição e direitos rastreáveis.</p></div>
+            <span class="count-chip" id="library-count">0 itens</span>
+          </div>
+          <div class="filter-row">
+            <label class="search-box"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Buscar prato, ingrediente, chef…" autocomplete="off" aria-label="Buscar na biblioteca"></label>
+            <label class="visually-hidden" for="category-filter">Categoria</label>
+            <select id="category-filter"><option value="">Todas as categorias</option></select>
+            <label class="visually-hidden" for="country-filter">País</label>
+            <select id="country-filter"><option value="">Todos os países</option></select>
+          </div>
+          <details class="advanced-filters">
+            <summary>Mais filtros gastronômicos</summary>
+            <div class="filter-grid">
+              <label>Idioma<select id="language-filter"><option value="">Todos os idiomas</option></select></label>
+              <label>Ingrediente<select id="ingredient-filter"><option value="">Todos os ingredientes</option></select></label>
+              <label>Técnica<select id="technique-filter"><option value="">Todas as técnicas</option></select></label>
+              <label>Chef<select id="chef-filter"><option value="">Todos os chefs</option></select></label>
+              <label>Restaurante<select id="restaurant-filter"><option value="">Todos os restaurantes</option></select></label>
+              <label>Prato<select id="dish-filter"><option value="">Todos os pratos</option></select></label>
+              <label>Duração<select id="duration-filter"><option value="">Qualquer duração</option></select></label>
+              <label>Temporada<select id="season-filter"><option value="">Todas as temporadas</option></select></label>
+            </div>
+          </details>
+          <div id="video-grid" class="video-grid" aria-live="polite"></div>
+          <div id="empty-state" class="empty-state">
+            <div class="empty-art" aria-hidden="true"><span>✳</span><i></i><b></b></div>
+            <h3>O catálogo real ainda não está conectado</h3>
+            <p>Não há vídeos neste repositório. A biblioteca só exibirá itens após uma importação validada; registros incompletos ou com direitos indefinidos não ganham página pública.</p>
+            <a href="#manifest-import" class="text-link">Validar um manifesto local <span aria-hidden="true">→</span></a>
+          </div>
+          <div id="no-results" class="empty-compact" hidden>Nenhum vídeo elegível corresponde a esses filtros.</div>
+        </div>
+
+        <aside class="side-column">
+          <section class="panel pipeline-panel" id="pipeline">
+            <div class="panel-heading compact"><div><div class="eyebrow">PRODUCTION FLOW</div><h2>Pipeline</h2></div><span class="muted-chip">NÃO CONECTADO</span></div>
+            <ol class="pipeline-list">
+              <li><span class="pipeline-number">01</span><div><strong>Sinal e pauta</strong><small>Aguardando fonte</small></div><span class="pipeline-state state-muted">—</span></li>
+              <li><span class="pipeline-number">02</span><div><strong>Direitos e editorial</strong><small>Gate obrigatório</small></div><span class="pipeline-state state-muted">—</span></li>
+              <li><span class="pipeline-number">03</span><div><strong>Geração nativa</strong><small>Capacidade não aferida</small></div><span class="pipeline-state state-muted">—</span></li>
+              <li><span class="pipeline-number">04</span><div><strong>Validação e publicação</strong><small>Sem itens elegíveis</small></div><span class="pipeline-state state-muted">—</span></li>
+            </ol>
+            <div class="pipeline-foot"><span>Produção nesta execução</span><strong>Não iniciada</strong></div>
+          </section>
+          <section class="panel metric-status" id="measurement">
+            <div class="panel-heading compact"><div><div class="eyebrow">REAL-WORLD SIGNALS</div><h2>Telemetria</h2></div><span class="signal-icon" aria-hidden="true">⌁</span></div>
+            <p class="metric-disclaimer">Visualizações, watch time, engagement, CTR, visitas, inscrições e assinaturas não estão conectados. Por isso, nenhum número é estimado ou substituído por zero.</p>
+            <div class="metric-status-list"><span>Impressões e views</span><b>Não disponível</b><span>Watch time e engagement</span><b>Não disponível</b><span>Entradas e conversões</span><b>Não disponível</b></div>
+          </section>
+        </aside>
+      </section>
+
+      <section class="panel import-panel" id="manifest-import">
+        <div class="import-copy"><div class="eyebrow">SAFE INGESTION</div><h2>Pré-validar manifesto</h2><p>Prévia local no navegador: o arquivo não é enviado, salvo ou publicado. Use o contrato <code>content/video.schema.json</code>; campos ausentes permanecem ausentes e impedem a publicação.</p></div>
+        <div class="import-action"><label for="manifest-file" class="upload-button">Selecionar JSON <span aria-hidden="true">↑</span></label><input id="manifest-file" type="file" accept="application/json,.json" hidden><div id="import-result" class="import-result" role="status">Nenhum arquivo selecionado</div></div>
+      </section>
+
+      <footer class="footer"><span>KITCHEN AI GLOBAL <i>·</i> dados verificáveis, publicação responsável</span><span id="build-state">Modo de visualização estático</span></footer>
+    </main>
+  </div>
 </body>
 </html>
